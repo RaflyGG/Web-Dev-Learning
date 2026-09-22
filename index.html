@@ -1,97 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bandung Tour</title>
+    <title>Bandung Tour - Panduan Wisata Kota Kembang</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .bg {
-            /* Linear gradient overlay + Anime Gedung Sate background */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.55)), 
-                              url("Gambar/GedungSate_anime.jpg");
-
-            /* Hero section height */
-            min-height: 70vh;
-
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .bg h1 {
-            font-size: 48px;
-            margin: 0 0 12px 0;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
-        }
-
-        .bg p {
-            font-size: 18px;
-            max-width: 600px;
-            margin: 0 0 24px 0;
-            font-weight: 300;
-            color: #f0f0f0;
-            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-        }
-
-        .cta-btn {
-            background-color: #3b82f6;
-            color: white;
-            padding: 12px 28px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 16px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
-        }
-
-        .cta-btn:hover {
-            background-color: #2563eb;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
-        }
-    </style>
-
+    <!-- External CSS: Ditambahkan query version (?v=2) untuk mencegah browser cache -->
+    <link rel="stylesheet" href="css/style.css?v=2">
 </head>
 
 <body>
 
-    <div class="bg">
-        <h1>Selamat Datang di Bandung</h1>
-        <p>Jelajahi keindahan alam, pesona sejarah, dan kelezatan kuliner di Kota Kembang.</p>
+    <!-- Hero Section: Menggunakan tag semantic <header> -->
+    <header class="hero">
+        <h1 class="hero-title">Selamat Datang di Bandung</h1>
+        <p class="hero-subtitle">Jelajahi keindahan alam, pesona sejarah, dan kelezatan kuliner di Kota Kembang.</p>
         <a href="#destinasi" class="cta-btn">Mulai Eksplorasi</a>
+    </header>
+
+    <!-- Main Content: Bagian konten utama halaman -->
+    <main>
+        <section id="destinasi" class="destinasi-section">
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>Top 6 Destinasi di Bandung</h2>
+                    <p>Tempat-tempat ikonik yang wajib kamu kunjungi saat berlibur ke Bandung.</p>
+                </div>
+
+                <!-- 3 Kolom Kartu Wisata -->
+                <div class="cards-grid">
+                    <!-- Kartu 1: Kawah Putih -->
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="Gambar/KawahPutih.jpg" alt="Kawah Putih Ciwidey" class="card-img">
+                            <span class="card-badge badge-alam">Alam</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Kawah Putih Ciwidey</h3>
+                            <p class="card-desc">Danau kawah vulkanik eksotis dengan air berwarna putih kehijauan dan kabut belerang yang magis.</p>
+                            <a href="#" class="card-btn">Lihat Detail &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Kartu 2: Jalan Braga -->
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="Gambar/JalanBraga.jpg" alt="Jalan Braga Bandung" class="card-img">
+                            <span class="card-badge badge-kota">Sejarah & Kota</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Jalan Braga</h3>
+                            <p class="card-desc">Pusat nostalgia kota Bandung dengan deretan arsitektur kolonial Eropa klasik dan kafe estetik.</p>
+                            <a href="#" class="card-btn">Lihat Detail &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Kartu 3: Tangkuban Perahu -->
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="Gambar/TangkubanPerahu.jpg" alt="Gunung Tangkuban Perahu" class="card-img">
+                            <span class="card-badge badge-petualangan">Petualangan</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Tangkuban Perahu</h3>
+                            <p class="card-desc">Kawah gunung berapi raksasa yang melegenda, dikelilingi pemandangan alam kebun teh yang asri.</p>
+                            <a href="#" class="card-btn">Lihat Detail &rarr;</a>
+                        </div>
+                    </article>
+
+                            <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="Gambar/TangkubanPerahu.jpg" alt="Gunung Tangkuban Perahu" class="card-img">
+                            <span class="card-badge badge-petualangan">Petualangan</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Tangkuban Perahu</h3>
+                            <p class="card-desc">Kawah gunung berapi raksasa yang melegenda, dikelilingi pemandangan alam kebun teh yang asri.</p>
+                            <a href="#" class="card-btn">Lihat Detail &rarr;</a>
+                        </div>
+                    </article>
+
+                            <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="Gambar/TangkubanPerahu.jpg" alt="Gunung Tangkuban Perahu" class="card-img">
+                            <span class="card-badge badge-petualangan">Petualangan</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Tangkuban Perahu</h3>
+                            <p class="card-desc">Kawah gunung berapi raksasa yang melegenda, dikelilingi pemandangan alam kebun teh yang asri.</p>
+                            <a href="#" class="card-btn">Lihat Detail &rarr;</a>
+                        </div>
+                    </article>
+
+                            <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="Gambar/TangkubanPerahu.jpg" alt="Gunung Tangkuban Perahu" class="card-img">
+                            <span class="card-badge badge-petualangan">Petualangan</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Tangkuban Perahu</h3>
+                            <p class="card-desc">Kawah gunung berapi raksasa yang melegenda, dikelilingi pemandangan alam kebun teh yang asri.</p>
+                            <a href="#" class="card-btn">Lihat Detail &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. Lapisan Terluar: Tag <section> dengan ID unik dan Class -->
+<section id="nama-section" class="nama-section">
+
+    <!-- 2. Lapisan Pembatas: .container (supaya tidak meluber ke ujung monitor) -->
+    <div class="container">
+
+        <!-- 3. Lapisan Judul: Header Section -->
+        <div class="section-header">
+            <h2>Judul Section Kamu</h2>
+            <p>Deskripsi singkat tentang apa isi bagian ini.</p>
+        </div>
+
+        <!-- 4. Lapisan Konten: Tempat kamu menaruh isi (Grid, Teks, atau Kartu) -->
+        <div class="isi-konten">
+            <!-- Konten ditaruh di sini -->
+        </div>
+
     </div>
-    
+
+</section>
+    </main>
+
+    <!-- Footer: Bagian penutup halaman -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Bandung Tour. Dibuat dengan cinta untuk Kota Kembang.</p>
+        </div>
+    </footer>
 
 </body>
 
