@@ -12,7 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- External CSS: Mengikuti prinsip Separation of Concerns -->
-    <link rel="stylesheet" href="css/style.css?v=6">
+    <link rel="stylesheet" href="css/style.css?v=7">
+
+    <script src="js/main.js" defer></script>
+
 </head>
 
 <body>
@@ -246,7 +249,49 @@
 
         </div>
     </div>
-</section>
+        </section>
+
+        <!-- Modal -->
+        
+        <section>
+
+        <!-- Modal Popup Interaktif -->
+                <div id="ticketModal" class="modal-overlay">
+                <div class="modal-box">
+                    <!-- Tombol Tutup (X) -->
+                    <button id="closeModalBtn" class="modal-close-btn">&times;</button>
+                    
+                    <!-- Konten Dinamis yang Diisi oleh JavaScript -->
+                    <div class="modal-header">
+                        <span class="modal-badge">Informasi Wisata</span>
+                        <h3 id="modalTitle">Nama Tempat Wisata</h3>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="info-row">
+                            <strong>📍 Lokasi:</strong>
+                            <span id="modalLocation">Bandung</span>
+                        </div>
+                        <div class="info-row">
+                            <strong>🎟️ Estimasi Tiket:</strong>
+                            <span id="modalPrice" class="price-highlight">Rp 30.000 / orang</span>
+                        </div>
+                        <div class="info-row">
+                            <strong>⏰ Jam Buka:</strong>
+                            <span id="modalHours">08:00 - 17:00 WIB</span>
+                        </div>
+                        <p id="modalDesc" class="modal-description">Deskripsi tempat wisata...</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="modal-action-btn" onclick="alert('Fitur pemesanan tiket akan segera hadir!')">Pesan Tiket Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
 
     </main>
 
