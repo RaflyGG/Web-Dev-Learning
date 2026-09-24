@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- External CSS: Ditambahkan query version (?v=2) untuk mencegah browser cache -->
-    <link rel="stylesheet" href="css/style.css?v=2">
+    <!-- External CSS: Mengikuti prinsip Separation of Concerns -->
+    <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                     <p>Tempat-tempat ikonik yang wajib kamu kunjungi saat berlibur ke Bandung.</p>
                 </div>
 
-                <!-- 3 Kolom Kartu Wisata -->
+                <!-- 6 Kolom Kartu Wisata Unik -->
                 <div class="cards-grid">
                     <!-- Kartu 1: Kawah Putih -->
                     <article class="card">
@@ -75,38 +75,41 @@
                         </div>
                     </article>
 
-                            <article class="card">
+                    <!-- Kartu 4: Tebing Keraton -->
+                    <article class="card">
                         <div class="card-img-wrapper">
-                            <img src="Gambar/TangkubanPerahu.jpg" alt="Gunung Tangkuban Perahu" class="card-img">
-                            <span class="card-badge badge-petualangan">Petualangan</span>
+                            <img src="Gambar/TebingKeraton.jpg" alt="Tebing Keraton Bandung" class="card-img">
+                            <span class="card-badge badge-alam">Panorama Alam</span>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Tangkuban Perahu</h3>
-                            <p class="card-desc">Kawah gunung berapi raksasa yang melegenda, dikelilingi pemandangan alam kebun teh yang asri.</p>
+                            <h3 class="card-title">Tebing Keraton</h3>
+                            <p class="card-desc">Tebing batu megah dengan panorama magis hamparan kabut pagi dan rimbunnya hutan pinus Dago.</p>
                             <a href="#" class="card-btn">Lihat Detail &rarr;</a>
                         </div>
                     </article>
 
-                            <article class="card">
+                    <!-- Kartu 5: Orchid Forest Cikole -->
+                    <article class="card">
                         <div class="card-img-wrapper">
-                            <img src="Gambar/TangkubanPerahu.jpg" alt="Gunung Tangkuban Perahu" class="card-img">
-                            <span class="card-badge badge-petualangan">Petualangan</span>
+                            <img src="Gambar/OrchidForest.jpg" alt="Orchid Forest Cikole Lembang" class="card-img">
+                            <span class="card-badge badge-rekreasi">Wisata Hutan</span>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Tangkuban Perahu</h3>
-                            <p class="card-desc">Kawah gunung berapi raksasa yang melegenda, dikelilingi pemandangan alam kebun teh yang asri.</p>
+                            <h3 class="card-title">Orchid Forest Cikole</h3>
+                            <p class="card-desc">Kawasan hutan pinus sejuk di Lembang dengan jembatan gantung bercahaya dan koleksi anggrek langka.</p>
                             <a href="#" class="card-btn">Lihat Detail &rarr;</a>
                         </div>
                     </article>
 
-                            <article class="card">
+                    <!-- Kartu 6: Floating Market Lembang -->
+                    <article class="card">
                         <div class="card-img-wrapper">
-                            <img src="Gambar/TangkubanPerahu.jpg" alt="Gunung Tangkuban Perahu" class="card-img">
-                            <span class="card-badge badge-petualangan">Petualangan</span>
+                            <img src="Gambar/FloatingMarket.jpg" alt="Floating Market Lembang" class="card-img">
+                            <span class="card-badge badge-keluarga">Wisata Keluarga</span>
                         </div>
                         <div class="card-body">
-                            <h3 class="card-title">Tangkuban Perahu</h3>
-                            <p class="card-desc">Kawah gunung berapi raksasa yang melegenda, dikelilingi pemandangan alam kebun teh yang asri.</p>
+                            <h3 class="card-title">Floating Market</h3>
+                            <p class="card-desc">Pasar terapung seru di atas danau alami, menyajikan aneka jajanan tradisional khas Bandung dari perahu.</p>
                             <a href="#" class="card-btn">Lihat Detail &rarr;</a>
                         </div>
                     </article>
@@ -114,26 +117,137 @@
             </div>
         </section>
 
-        <!-- 1. Lapisan Terluar: Tag <section> dengan ID unik dan Class -->
-<section id="nama-section" class="nama-section">
+        <!-- Reviews Section: Ulasan Wisatawan ala Klook -->
+        <section id="reviews" class="reviews-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ulasan Wisatawan Bandung</h2>
+                    <p>Cerita nyata dan pengalaman seru dari mereka yang sudah berkunjung.</p>
+                </div>
 
-    <!-- 2. Lapisan Pembatas: .container (supaya tidak meluber ke ujung monitor) -->
+                <div class="reviews-grid">
+                    <!-- Review 1 -->
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div>
+                                <h4 class="reviewer-name">Andi Pratama</h4>
+                                <span class="review-date">12 September 2026</span>
+                            </div>
+                            <div class="review-rating">
+                                <span class="rating-badge">Luar Biasa 5.0</span>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            "Kawah Putih bener-bener magis! Pemandangan kabut dan air toskanya bikin takjub. Wajib datang pagi hari pas masih sejuk dan belum terlalu ramai."
+                        </p>
+                        <div class="review-activity">
+                            <img src="Gambar/KawahPutih.jpg" alt="Kawah Putih" class="activity-thumb">
+                            <span class="activity-name">Tur Eksplorasi Kawah Putih Ciwidey</span>
+                        </div>
+                    </article>
+
+                    <!-- Review 2 -->
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div>
+                                <h4 class="reviewer-name">Siti Nurhaliza</h4>
+                                <span class="review-date">18 September 2026</span>
+                            </div>
+                            <div class="review-rating">
+                                <span class="rating-badge">Luar Biasa 5.0</span>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            "Jalan Braga vibes-nya juara kalau sore menjelang malam. Nongkrong di kafenya sambil liat bangunan heritage terasa seperti nostalgia ke Bandung tempo dulu."
+                        </p>
+                        <div class="review-activity">
+                            <img src="Gambar/JalanBraga.jpg" alt="Jalan Braga" class="activity-thumb">
+                            <span class="activity-name">Braga Heritage & Coffee Walking Tour</span>
+                        </div>
+                    </article>
+
+                    <!-- Review 3 -->
+                    <article class="review-card">
+                        <div class="review-header">
+                            <div>
+                                <h4 class="reviewer-name">Budi Santoso</h4>
+                                <span class="review-date">21 September 2026</span>
+                            </div>
+                            <div class="review-rating">
+                                <span class="rating-badge">Luar Biasa 5.0</span>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            "Anak-anak senang banget diajak ke Orchid Forest. Jembatan gantungnya estetik dan lampunya menyala cantik saat senja. Udaranya segar banget!"
+                        </p>
+                        <div class="review-activity">
+                            <img src="Gambar/OrchidForest.jpg" alt="Orchid Forest" class="activity-thumb">
+                            <span class="activity-name">Tiket Masuk Orchid Forest & Sky Bridge</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
     <div class="container">
-
-        <!-- 3. Lapisan Judul: Header Section -->
+        <!-- Judul Section -->
         <div class="section-header">
-            <h2>Judul Section Kamu</h2>
-            <p>Deskripsi singkat tentang apa isi bagian ini.</p>
+            <h2>Pertanyaan Seputar Wisata Bandung</h2>
+            <p>Hal-hal yang sering ditanyakan wisatawan sebelum berlibur ke Kota Kembang.</p>
         </div>
 
-        <!-- 4. Lapisan Konten: Tempat kamu menaruh isi (Grid, Teks, atau Kartu) -->
-        <div class="isi-konten">
-            <!-- Konten ditaruh di sini -->
-        </div>
+        <!-- Wadah List FAQ -->
+        <div class="faq-container">
 
+            <!-- Item 1 -->
+            <details class="faq-item" open> <!-- 'open' membuat item pertama langsung terbuka seperti di Klook -->
+                <summary class="faq-question">
+                    <span>Kapan waktu terbaik untuk berlibur ke Bandung?</span>
+                    <span class="faq-icon"></span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Bulan Mei hingga September adalah waktu paling ideal karena curah hujan relatif rendah, cocok untuk eksplorasi wisata alam terbuka seperti Ciwidey dan Lembang.</p>
+                </div>
+            </details>
+
+            <!-- Item 2 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>Bagaimana cara terbaik berkeliling di kota Bandung?</span>
+                    <span class="faq-icon"></span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Untuk area dalam kota (seperti Braga dan Riau), transportasi online atau sewa motor sangat praktis. Untuk wisata dataran tinggi (Lembang/Ciwidey), disarankan menyewa mobil harian.</p>
+                </div>
+            </details>
+
+            <!-- Item 3 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>Apakah harus memesan tiket tempat wisata jauh-jauh hari?</span>
+                    <span class="faq-icon"></span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Untuk hari kerja (weekdays) bisa langsung beli di tempat (on-the-spot). Namun saat akhir pekan (weekend) atau musim libur panjang, sangat disarankan pesan tiket online agar tidak antre panjang.</p>
+                </div>
+            </details>
+
+            <!-- Item 4 -->
+            <details class="faq-item">
+                <summary class="faq-question">
+                    <span>Berapa kisaran budget harian untuk wisata di Bandung?</span>
+                    <span class="faq-icon"></span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Secara umum, kisaran budget harian berkisar antara Rp 200.000 – Rp 500.000 per orang, sudah mencakup tiket masuk wisata reguler, kuliner lokal, dan transportasi.</p>
+                </div>
+            </details>
+
+        </div>
     </div>
-
 </section>
+
     </main>
 
     <!-- Footer: Bagian penutup halaman -->
